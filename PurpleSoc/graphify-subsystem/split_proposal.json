@@ -1,0 +1,160 @@
+{
+  "subsystem_inventory": {
+    "agent.py": {
+      "LOC": 309,
+      "complexity_score": 35,
+      "key_concepts": [
+        "LangChain agent orchestration",
+        "Groq LLM integration",
+        "Socket server (syslog)",
+        "Threat analysis prompt engineering",
+        "MongoDB persistence"
+      ],
+      "dependencies": {
+        "external": [
+          "langchain_openai",
+          "langchain.agents",
+          "pymongo",
+          "socket"
+        ],
+        "internal": []
+      },
+      "external_inputs": [
+        "Sniffer/HAProxy (syslog)"
+      ],
+      "external_outputs": [
+        "Groq API",
+        "MongoDB reports_col (to SOC dashboard)"
+      ]
+    },
+    "detector.py": {
+      "LOC": 260,
+      "complexity_score": 30,
+      "key_concepts": [
+        "CICFlowMeter feature schema (80+ features)",
+        "Keras/TensorFlow inference",
+        "Feature scaling and selection",
+        "FastAPI REST endpoint",
+        "MongoDB persistence",
+        "Timestamp/label normalization"
+      ],
+      "dependencies": {
+        "external": [
+          "fastapi",
+          "tensorflow.keras",
+          "pandas",
+          "joblib",
+          "pymongo"
+        ],
+        "internal": []
+      },
+      "external_inputs": [
+        "CICFlowMeter/flow collector (HTTP)"
+      ],
+      "external_outputs": [
+        "MongoDB traffic_logs_col (to SOC dashboard)"
+      ]
+    },
+    "models/": {
+      "LOC": 0,
+      "complexity_score": 5,
+      "artifacts": [
+        "ids_deep_learning_model.h5 (Keras)",
+        "ids_scaler_top20.pkl (feature scaling)",
+        "top_20_features.pkl (feature selection)",
+        "alternative models (ids_ann_model.h5, best_model.h5)"
+      ]
+    }
+  },
+  "coupling_analysis": {
+    "shared_mongodb": {
+      "agent.py": [
+        "logs_col",
+        "reports_col"
+      ],
+      "detector.py": [
+        "traffic_logs_col"
+      ],
+      "decoupling": "Completely independent collections — agent reads logs, detector reads traffic, dashboard reads both"
+    },
+    "shared_schemas": {
+      "agent.py": "ThreatAnalysis (output schema)",
+      "detector.py": "FlowData (input schema)",
+      "decoupling": "No direct dependency — different input/output domains"
+    },
+    "code_coupling": "NONE — no direct imports between files"
+  },
+  "split_proposal": {
+    "strategy": "Vertical split by concern: ML/Detection vs LLM/Threat Hunting",
+    "HALF_1_ML_AND_IDS_CORE": {
+      "files": [
+        "ml_detector/detector.py",
+        "models/ids_deep_learning_model.h5",
+        "models/ids_scaler_top20.pkl",
+        "models/top_20_features.pkl"
+      ],
+      "LOC": 260,
+      "complexity": "Medium (ML inference, feature engineering)",
+      "key_topics": [
+        "Network flow feature engineering (CICFlowMeter schema)",
+        "Keras model architecture & inference pipeline",
+        "Feature scaling & selection for model input",
+        "Real-time classification threshold (0.5)",
+        "FastAPI REST API design patterns",
+        "Timestamp/label robustness helpers"
+      ],
+      "defense_questions_they_will_face": [
+        "Why 20 features? What were the top 20 selected from CIC-IDS2017?",
+        "Explain the feature scaling step. Why is StandardScaler applied?",
+        "What does the 0.5 threshold represent? Is it optimal for your use case?",
+        "Walk through a single flow: from FlowData JSON → prediction",
+        "How would you evaluate model performance (precision/recall/F1)?",
+        "Why TensorFlow/Keras vs PyTorch or scikit-learn?",
+        "What does traffic_logs collection store? Who consumes it?"
+      ],
+      "study_focus": "Model-centric: understand flow features, preprocessing, inference, API contract"
+    },
+    "HALF_2_THREAT_ANALYSIS_AGENT": {
+      "files": [
+        "agent/agent.py",
+        "agent/requirements.txt"
+      ],
+      "LOC": 309,
+      "complexity": "Medium-High (LLM reasoning, agent orchestration)",
+      "key_topics": [
+        "LangChain agent framework & tool definition",
+        "Groq LLM API integration (GPT-compatible endpoint)",
+        "Prompt engineering: threat detection behavioral framework",
+        "Attack signature detection (path traversal, auth probing, etc.)",
+        "Socket server: syslog parsing & log ingestion",
+        "Pydantic structured output (ThreatAnalysis schema)",
+        "Multi-turn interaction: logs → prompt → LLM verdict → persistence"
+      ],
+      "defense_questions_they_will_face": [
+        "Explain the behavioral analysis framework in your prompt. Why those specific signatures?",
+        "Walk through an example: suspicious IP → prompt construction → LLM analysis",
+        "Why is is_true_positive a separate field? How do you prevent false positives?",
+        "How does the agent handle multi-turn reasoning? Does it use tools?",
+        "What does ThreatAnalysis output contain? Why risk_score 1-10?",
+        "Explain the socket server flow: listen → parse JSON → trigger analysis",
+        "How are logs_col and reports_col used? What's the relationship?",
+        "Why Groq API over OpenAI? Trade-offs?"
+      ],
+      "study_focus": "Reasoning-centric: understand prompt design, agent orchestration, SOC threat-hunting logic"
+    },
+    "coupling_analysis": {
+      "MongoDB sharing": "Not a coupling issue — independent collections (logs_col vs traffic_logs_col vs reports_col)",
+      "Code imports": "Zero direct imports — can study independently",
+      "Operational coupling": "Sequential flow (traffic → detector → agent → reports) but can be studied separately",
+      "Shared concepts": "Both use Pydantic (BaseModel), both use MongoDB, both parse timestamps — good interview topics"
+    },
+    "why_this_split": [
+      "Minimal cross-dependencies: no imports between files, independent MongoDB collections",
+      "Clear topic boundaries: one is ML/feature engineering, one is LLM/reasoning",
+      "Balanced complexity: 260 LOC (ML) vs 309 LOC (agent) — roughly equal",
+      "Defense readiness: each person can deeply own their half — ML engineer owns detector, security engineer owns threat-hunting",
+      "Architectural clarity: detector is stateless inference, agent is stateful reasoning — different concerns",
+      "Interview narrative: detector tells 'how do you build fast ML for IDS?', agent tells 'how do you reason about threats with LLM?'"
+    ]
+  }
+}

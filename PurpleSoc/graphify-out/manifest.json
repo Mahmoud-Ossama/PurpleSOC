@@ -1,0 +1,477 @@
+{
+  "/mnt/d/PurpleSoc/PurpleSoc/agent/agent.py": {
+    "mtime": 1778354377.6322522,
+    "ast_hash": "0e0b06fcdc228b7f465724d39f07fa24",
+    "semantic_hash": "0e0b06fcdc228b7f465724d39f07fa24"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/haproxy/log_json.lua": {
+    "mtime": 1774752194.0,
+    "ast_hash": "7e0c7df65599b4f69cf25535e7ac8dae",
+    "semantic_hash": "7e0c7df65599b4f69cf25535e7ac8dae"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/ml_detector/detector.py": {
+    "mtime": 1774757356.0,
+    "ast_hash": "2cd583bc0fde1b0b7845be00332829da",
+    "semantic_hash": "2cd583bc0fde1b0b7845be00332829da"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/export/route.ts": {
+    "mtime": 1773887964.0,
+    "ast_hash": "175e8b68565a35b8e8e22d3f6943ea65",
+    "semantic_hash": "175e8b68565a35b8e8e22d3f6943ea65"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/geo/analytics/route.ts": {
+    "mtime": 1773894034.0,
+    "ast_hash": "46ede8aa3538fc41601ce2583bea0e96",
+    "semantic_hash": "46ede8aa3538fc41601ce2583bea0e96"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/geo/route.ts": {
+    "mtime": 1773850616.0,
+    "ast_hash": "37af2e353d0531563218f5e9a15700ba",
+    "semantic_hash": "37af2e353d0531563218f5e9a15700ba"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/health/route.ts": {
+    "mtime": 1773850518.0,
+    "ast_hash": "478924c5ce6696630f4cb69c2e164186",
+    "semantic_hash": "478924c5ce6696630f4cb69c2e164186"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/logs/route.ts": {
+    "mtime": 1773893652.0,
+    "ast_hash": "f7c4a6bc1e278bc8a5f668b729bde401",
+    "semantic_hash": "f7c4a6bc1e278bc8a5f668b729bde401"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/reports/route.ts": {
+    "mtime": 1773850588.0,
+    "ast_hash": "3048aaa51ae055f451dffb7109a6e9da",
+    "semantic_hash": "3048aaa51ae055f451dffb7109a6e9da"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/stats/route.ts": {
+    "mtime": 1773884890.0,
+    "ast_hash": "2b884f4c5e689e4987413d57aa60fc95",
+    "semantic_hash": "2b884f4c5e689e4987413d57aa60fc95"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/api/traffic/route.ts": {
+    "mtime": 1773893668.0,
+    "ast_hash": "3e6fb8a094c4050524759abde619d916",
+    "semantic_hash": "3e6fb8a094c4050524759abde619d916"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/error.tsx": {
+    "mtime": 1773851178.0,
+    "ast_hash": "3cad6e95537ef8a922a17e6ad7406151",
+    "semantic_hash": "3cad6e95537ef8a922a17e6ad7406151"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/layout.tsx": {
+    "mtime": 1773893480.0,
+    "ast_hash": "33bf4a34615125b467d21b1af517c4c3",
+    "semantic_hash": "33bf4a34615125b467d21b1af517c4c3"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/loading.tsx": {
+    "mtime": 1773851184.0,
+    "ast_hash": "b4be6058e02d2323fc5951788d8d3f9e",
+    "semantic_hash": "b4be6058e02d2323fc5951788d8d3f9e"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/logs/page.tsx": {
+    "mtime": 1773893824.0,
+    "ast_hash": "96b8834557844ca1b725da5232c80913",
+    "semantic_hash": "96b8834557844ca1b725da5232c80913"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/map/page.tsx": {
+    "mtime": 1773891738.0,
+    "ast_hash": "a2135958523766071efb330d53dd513f",
+    "semantic_hash": "a2135958523766071efb330d53dd513f"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/page.tsx": {
+    "mtime": 1773893506.0,
+    "ast_hash": "2b05a832050006f05f6c801da1a58337",
+    "semantic_hash": "2b05a832050006f05f6c801da1a58337"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/reports/page.tsx": {
+    "mtime": 1773851264.0,
+    "ast_hash": "23e2bc2a5c099c39c55d20ac215bbf2a",
+    "semantic_hash": "23e2bc2a5c099c39c55d20ac215bbf2a"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/app/traffic/page.tsx": {
+    "mtime": 1773893682.0,
+    "ast_hash": "b6a2f326ed94f9e2e77f6f1bb8091ad7",
+    "semantic_hash": "b6a2f326ed94f9e2e77f6f1bb8091ad7"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/AttackVelocityChart.tsx": {
+    "mtime": 1773893602.0,
+    "ast_hash": "0e58aa806207266eda5daffe8d4333e9",
+    "semantic_hash": "0e58aa806207266eda5daffe8d4333e9"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/GeoOriginBreakdown.tsx": {
+    "mtime": 1773893586.0,
+    "ast_hash": "3ef3c832a830eb00e06a086f45c93bce",
+    "semantic_hash": "3ef3c832a830eb00e06a086f45c93bce"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/KpiCard.tsx": {
+    "mtime": 1773850754.0,
+    "ast_hash": "5c58b1c2cd8499aa95ed665a4a2d6f0c",
+    "semantic_hash": "5c58b1c2cd8499aa95ed665a4a2d6f0c"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/MapPreviewCard.tsx": {
+    "mtime": 1773887520.0,
+    "ast_hash": "9fa044dfb13f094e730df7a4fd44e62c",
+    "semantic_hash": "9fa044dfb13f094e730df7a4fd44e62c"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/ProtocolDistChart.tsx": {
+    "mtime": 1773850778.0,
+    "ast_hash": "580695b24e6f0efcd5eeb712b927c0ba",
+    "semantic_hash": "580695b24e6f0efcd5eeb712b927c0ba"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/RecentThreatsWidget.tsx": {
+    "mtime": 1773850812.0,
+    "ast_hash": "6bd96723d0d321147d0714ca7afa4eb5",
+    "semantic_hash": "6bd96723d0d321147d0714ca7afa4eb5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/TopAttackersChart.tsx": {
+    "mtime": 1773850766.0,
+    "ast_hash": "9f6b3fc241d91f258a008729805b459a",
+    "semantic_hash": "9f6b3fc241d91f258a008729805b459a"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/TopCitiesChart.tsx": {
+    "mtime": 1773893570.0,
+    "ast_hash": "f66eda7605c2f91fe680ff3b9cad644d",
+    "semantic_hash": "f66eda7605c2f91fe680ff3b9cad644d"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/TopCountriesChart.tsx": {
+    "mtime": 1773894016.0,
+    "ast_hash": "dd69a5d9dbfeba46805c77c0efd9fc9d",
+    "semantic_hash": "dd69a5d9dbfeba46805c77c0efd9fc9d"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/dashboard/TrafficTimelineChart.tsx": {
+    "mtime": 1773850796.0,
+    "ast_hash": "925d73b46dfbe441dd4ab5ba55d3ec73",
+    "semantic_hash": "925d73b46dfbe441dd4ab5ba55d3ec73"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/layout/KasperskyNav.tsx": {
+    "mtime": 1773889068.0,
+    "ast_hash": "1663d9a86d6dce46fe3598b50347eb32",
+    "semantic_hash": "1663d9a86d6dce46fe3598b50347eb32"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/layout/Sidebar.tsx": {
+    "mtime": 1773850724.0,
+    "ast_hash": "807abc7f9aecc6f1db7d9fe441c36a4c",
+    "semantic_hash": "807abc7f9aecc6f1db7d9fe441c36a4c"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/layout/TopBar.tsx": {
+    "mtime": 1773850738.0,
+    "ast_hash": "0c73dfe31b1fc0e80437abb8746175a0",
+    "semantic_hash": "0c73dfe31b1fc0e80437abb8746175a0"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/logs/LogsFilters.tsx": {
+    "mtime": 1773893620.0,
+    "ast_hash": "e27f79aee8a5314d108a2232b9d9d16f",
+    "semantic_hash": "e27f79aee8a5314d108a2232b9d9d16f"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/logs/LogsTable.tsx": {
+    "mtime": 1773850856.0,
+    "ast_hash": "1ae138899dd4df0948f25a624565e0e6",
+    "semantic_hash": "1ae138899dd4df0948f25a624565e0e6"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/map/ThreatGlobe.tsx": {
+    "mtime": 1773894042.0,
+    "ast_hash": "1606c0174f57a77775ed7985430dbc5d",
+    "semantic_hash": "1606c0174f57a77775ed7985430dbc5d"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/map/ThreatMap.tsx": {
+    "mtime": 1773885154.0,
+    "ast_hash": "2a9ea1d4bb3ce4ccbf87cd317189fe9a",
+    "semantic_hash": "2a9ea1d4bb3ce4ccbf87cd317189fe9a"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/reports/ReportCard.tsx": {
+    "mtime": 1773850968.0,
+    "ast_hash": "af461233a889a8911b3132c9f7c778f4",
+    "semantic_hash": "af461233a889a8911b3132c9f7c778f4"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/reports/ReportsFilters.tsx": {
+    "mtime": 1773850988.0,
+    "ast_hash": "e5bc171138d04d57b6f5c62fe40b89d6",
+    "semantic_hash": "e5bc171138d04d57b6f5c62fe40b89d6"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/shared/ConnectionStatus.tsx": {
+    "mtime": 1773850678.0,
+    "ast_hash": "b619bdbd4d8babbc7eb1f334223c2669",
+    "semantic_hash": "b619bdbd4d8babbc7eb1f334223c2669"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/shared/EmptyState.tsx": {
+    "mtime": 1773850686.0,
+    "ast_hash": "c6ae169b4937ccfd0f3794c03ee7f558",
+    "semantic_hash": "c6ae169b4937ccfd0f3794c03ee7f558"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/shared/ExportButton.tsx": {
+    "mtime": 1773850700.0,
+    "ast_hash": "2d736af495fb6821e4eb8ff22535beb4",
+    "semantic_hash": "2d736af495fb6821e4eb8ff22535beb4"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/shared/RiskBadge.tsx": {
+    "mtime": 1773850668.0,
+    "ast_hash": "050d92f258894a5ca146c253b026d573",
+    "semantic_hash": "050d92f258894a5ca146c253b026d573"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/shared/TimeRangeSelect.tsx": {
+    "mtime": 1773850706.0,
+    "ast_hash": "ab855356ed448639ccd2c049fc7480be",
+    "semantic_hash": "ab855356ed448639ccd2c049fc7480be"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/traffic/TrafficFilters.tsx": {
+    "mtime": 1773893632.0,
+    "ast_hash": "60a373c4540c406f153010fe5c85a375",
+    "semantic_hash": "60a373c4540c406f153010fe5c85a375"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/components/traffic/TrafficTable.tsx": {
+    "mtime": 1773850908.0,
+    "ast_hash": "e57f0993c90fbc7f3d64ea71fff04d73",
+    "semantic_hash": "e57f0993c90fbc7f3d64ea71fff04d73"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/lib/countryFlag.tsx": {
+    "mtime": 1773893974.0,
+    "ast_hash": "24b06693d7ab8aa2cb4b7eb166b771dd",
+    "semantic_hash": "24b06693d7ab8aa2cb4b7eb166b771dd"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/lib/geo.ts": {
+    "mtime": 1773894300.0,
+    "ast_hash": "dcf0ec665f1e19deca173d8da44c18b2",
+    "semantic_hash": "dcf0ec665f1e19deca173d8da44c18b2"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/lib/mongodb.ts": {
+    "mtime": 1773887964.0,
+    "ast_hash": "a60908c9a2737b00bbab86f158e89eea",
+    "semantic_hash": "a60908c9a2737b00bbab86f158e89eea"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/lib/utils.ts": {
+    "mtime": 1773850510.0,
+    "ast_hash": "08a06c499647ef05f50cb02e904e5803",
+    "semantic_hash": "08a06c499647ef05f50cb02e904e5803"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/next-env.d.ts": {
+    "mtime": 1773887470.0,
+    "ast_hash": "a64595e6014adce3002d3bf762d2dbeb",
+    "semantic_hash": "a64595e6014adce3002d3bf762d2dbeb"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/next.config.ts": {
+    "mtime": 1773883914.0,
+    "ast_hash": "d9a892d1453e2b9671c09b1a7f8dc144",
+    "semantic_hash": "d9a892d1453e2b9671c09b1a7f8dc144"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/package.json": {
+    "mtime": 1773894888.0,
+    "ast_hash": "a7776871d11e29717fe10e981de04d0f",
+    "semantic_hash": "a7776871d11e29717fe10e981de04d0f"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/postcss.config.mjs": {
+    "mtime": 1773851312.0,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/tailwind.config.ts": {
+    "mtime": 1773851306.0,
+    "ast_hash": "18aec846427f1c13e37bba97f0431a76",
+    "semantic_hash": "18aec846427f1c13e37bba97f0431a76"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/tsconfig.json": {
+    "mtime": 1773887470.0,
+    "ast_hash": "dc871ed74d0b5055b05923ff25d11d34",
+    "semantic_hash": "dc871ed74d0b5055b05923ff25d11d34"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/types/api.ts": {
+    "mtime": 1773894022.0,
+    "ast_hash": "e4a67744285ed45175a0dd0c73fb223f",
+    "semantic_hash": "e4a67744285ed45175a0dd0c73fb223f"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/types/log.ts": {
+    "mtime": 1773887972.0,
+    "ast_hash": "3e8ac52847b86ce93e2f9241d62caf6e",
+    "semantic_hash": "3e8ac52847b86ce93e2f9241d62caf6e"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/types/report.ts": {
+    "mtime": 1773850454.0,
+    "ast_hash": "7d46a1efb23b0dd8c23fc4d266cbede4",
+    "semantic_hash": "7d46a1efb23b0dd8c23fc4d266cbede4"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/types/traffic.ts": {
+    "mtime": 1773850450.0,
+    "ast_hash": "18c21136d19de891eb105151088b12e3",
+    "semantic_hash": "18c21136d19de891eb105151088b12e3"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/api/index.php": {
+    "mtime": 1770213098.0,
+    "ast_hash": "0c905895a71e5b3c47e6082790468738",
+    "semantic_hash": "0c905895a71e5b3c47e6082790468738"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/config/config.php": {
+    "mtime": 1773551882.0,
+    "ast_hash": "b8bf6bedb27a96169754b65c8b33d059",
+    "semantic_hash": "b8bf6bedb27a96169754b65c8b33d059"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/config/database.php": {
+    "mtime": 1772221752.0,
+    "ast_hash": "7121e1d57645d6e7a839e7c0acbbeb4a",
+    "semantic_hash": "7121e1d57645d6e7a839e7c0acbbeb4a"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/database/schema.sql": {
+    "mtime": 1773550624.0,
+    "ast_hash": "2720bb7200b1547cc0933ecab4acb649",
+    "semantic_hash": "2720bb7200b1547cc0933ecab4acb649"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/includes/footer.php": {
+    "mtime": 1770211838.0,
+    "ast_hash": "48263878fe8a3de354b87c7f9810d53a",
+    "semantic_hash": "48263878fe8a3de354b87c7f9810d53a"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/includes/functions.php": {
+    "mtime": 1770211776.0,
+    "ast_hash": "2a16159e83fd1209b7e952e3a099331b",
+    "semantic_hash": "2a16159e83fd1209b7e952e3a099331b"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/includes/header.php": {
+    "mtime": 1770211812.0,
+    "ast_hash": "2a5712384a892b362b021d3d25f078e3",
+    "semantic_hash": "2a5712384a892b362b021d3d25f078e3"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/index.php": {
+    "mtime": 1770212668.0,
+    "ast_hash": "b57e585ce8b4bf256c599688aecb0530",
+    "semantic_hash": "b57e585ce8b4bf256c599688aecb0530"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/admin/dashboard.php": {
+    "mtime": 1770212384.0,
+    "ast_hash": "95b3924443fa802a960a88c1dcda7ece",
+    "semantic_hash": "95b3924443fa802a960a88c1dcda7ece"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/admin/logs.php": {
+    "mtime": 1770212622.0,
+    "ast_hash": "0d7d0d899da135ecb43ac7ec01bd76e5",
+    "semantic_hash": "0d7d0d899da135ecb43ac7ec01bd76e5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/admin/orders.php": {
+    "mtime": 1770212602.0,
+    "ast_hash": "aa59504c3465f6b3dee502c5e0090c91",
+    "semantic_hash": "aa59504c3465f6b3dee502c5e0090c91"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/admin/products.php": {
+    "mtime": 1770212584.0,
+    "ast_hash": "a00b55fc08fddb2324db5f9e28ba95e4",
+    "semantic_hash": "a00b55fc08fddb2324db5f9e28ba95e4"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/admin/users.php": {
+    "mtime": 1770212414.0,
+    "ast_hash": "465ff023e73f83d6e476f93cd19ca0dd",
+    "semantic_hash": "465ff023e73f83d6e476f93cd19ca0dd"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/auth/login.php": {
+    "mtime": 1773551576.0,
+    "ast_hash": "9f612611139735d503b4afc9cf851be5",
+    "semantic_hash": "9f612611139735d503b4afc9cf851be5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/auth/logout.php": {
+    "mtime": 1770211942.0,
+    "ast_hash": "1658494340356d65123dd528c5bd910f",
+    "semantic_hash": "1658494340356d65123dd528c5bd910f"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/auth/register.php": {
+    "mtime": 1773551468.0,
+    "ast_hash": "fa51420a7c1bc6ebcba66c2130ff6c80",
+    "semantic_hash": "fa51420a7c1bc6ebcba66c2130ff6c80"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/shop/cart.php": {
+    "mtime": 1770212106.0,
+    "ast_hash": "1bb655fdd29c5fd8cb5322dd3dfed6e5",
+    "semantic_hash": "1bb655fdd29c5fd8cb5322dd3dfed6e5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/shop/checkout.php": {
+    "mtime": 1770212230.0,
+    "ast_hash": "245a3c016aa78dd0744bbd03cc57ff1d",
+    "semantic_hash": "245a3c016aa78dd0744bbd03cc57ff1d"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/shop/product.php": {
+    "mtime": 1770212064.0,
+    "ast_hash": "3ea2295787fbb1f15aa686c36ab18726",
+    "semantic_hash": "3ea2295787fbb1f15aa686c36ab18726"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/shop/products.php": {
+    "mtime": 1770212012.0,
+    "ast_hash": "a554c3cca827f8288d8408114bdd8e6e",
+    "semantic_hash": "a554c3cca827f8288d8408114bdd8e6e"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/user/order-detail.php": {
+    "mtime": 1770212326.0,
+    "ast_hash": "273207e8401f9179ed55210431611e48",
+    "semantic_hash": "273207e8401f9179ed55210431611e48"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/user/orders.php": {
+    "mtime": 1770212294.0,
+    "ast_hash": "f751e682d5de840e8e5ebd18bc737501",
+    "semantic_hash": "f751e682d5de840e8e5ebd18bc737501"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/pages/user/profile.php": {
+    "mtime": 1770212270.0,
+    "ast_hash": "5f8bd0aef0900537d1bd0c7673dda085",
+    "semantic_hash": "5f8bd0aef0900537d1bd0c7673dda085"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/public/js/app.js": {
+    "mtime": 1770212830.0,
+    "ast_hash": "745505b75e5a4e06243b2384186015c4",
+    "semantic_hash": "745505b75e5a4e06243b2384186015c4"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/secure/auth/login.php": {
+    "mtime": 1770213000.0,
+    "ast_hash": "3e884cebc5ce3d1c078de5d289dcf370",
+    "semantic_hash": "3e884cebc5ce3d1c078de5d289dcf370"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/secure/shop/products.php": {
+    "mtime": 1770213046.0,
+    "ast_hash": "8176127ba6a2bbe9f9737b407329e140",
+    "semantic_hash": "8176127ba6a2bbe9f9737b407329e140"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/.github/agents/purplesoc-project.agent.md": {
+    "mtime": 1778354493.4971118,
+    "ast_hash": "991d75391d8a02a8d34f264a7693ea06",
+    "semantic_hash": "991d75391d8a02a8d34f264a7693ea06"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/agent/requirements.txt": {
+    "mtime": 1774752256.0,
+    "ast_hash": "98fcc5c48b863e302b07d28a87c339f2",
+    "semantic_hash": "98fcc5c48b863e302b07d28a87c339f2"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/docker-compose.yml": {
+    "mtime": 1775911836.0,
+    "ast_hash": "8876bd82b0369d2a9339588fca5b21e5",
+    "semantic_hash": "8876bd82b0369d2a9339588fca5b21e5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/docs/project-overview.md": {
+    "mtime": 1778363976.801606,
+    "ast_hash": "f176155b78fb8bac340765619de729f0",
+    "semantic_hash": "f176155b78fb8bac340765619de729f0"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/README.md": {
+    "mtime": 1773851354.0,
+    "ast_hash": "e468d518734401a3215a51221d2d8569",
+    "semantic_hash": "e468d518734401a3215a51221d2d8569"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/soc-dashboard/docker-compose.yml": {
+    "mtime": 1773894664.0,
+    "ast_hash": "0e9b59d0ad924422101d05dae7ec30d5",
+    "semantic_hash": "0e9b59d0ad924422101d05dae7ec30d5"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/web/README.md": {
+    "mtime": 1770211658.0,
+    "ast_hash": "e3364cc972ccb936c6fb3a12e3345e62",
+    "semantic_hash": "e3364cc972ccb936c6fb3a12e3345e62"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/models/__results___files/__results___4_1.png": {
+    "mtime": 1778873441.202617,
+    "ast_hash": "a6b47a2132aa7381d658cd5c1c065717",
+    "semantic_hash": "a6b47a2132aa7381d658cd5c1c065717"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/models/__results___files/__results___7_0.png": {
+    "mtime": 1778873441.2036176,
+    "ast_hash": "e4c8681323ae6e1be770d7663325b820",
+    "semantic_hash": "e4c8681323ae6e1be770d7663325b820"
+  },
+  "/mnt/d/PurpleSoc/PurpleSoc/models/__results___files/__results___8_1.png": {
+    "mtime": 1778873441.233425,
+    "ast_hash": "7266b2e956dd2bc1f3ce41f5f981d7b0",
+    "semantic_hash": "7266b2e956dd2bc1f3ce41f5f981d7b0"
+  }
+}

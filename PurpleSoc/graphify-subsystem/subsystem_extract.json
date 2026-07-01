@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "id": "agent.py:ThreatAnalysis",
+      "label": "ThreatAnalysis Schema",
+      "type": "class",
+      "source_file": "agent/agent.py",
+      "start_line": 60,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:_build_prompt",
+      "label": "_build_prompt()",
+      "type": "function",
+      "source_file": "agent/agent.py",
+      "start_line": 71,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:analyze_and_save",
+      "label": "analyze_and_save()",
+      "type": "function",
+      "source_file": "agent/agent.py",
+      "start_line": 164,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:_save_report",
+      "label": "_save_report()",
+      "type": "function",
+      "source_file": "agent/agent.py",
+      "start_line": 199,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:socket_server",
+      "label": "Socket Server (main loop)",
+      "type": "function",
+      "source_file": "agent/agent.py",
+      "start_line": 250,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:ChatOpenAI",
+      "label": "ChatOpenAI LLM Client",
+      "type": "entity",
+      "source_file": "agent/agent.py",
+      "start_line": 165,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:create_agent",
+      "label": "create_agent()",
+      "type": "function",
+      "source_file": "agent/agent.py",
+      "start_line": 172,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:MongoClient",
+      "label": "MongoDB Connection",
+      "type": "entity",
+      "source_file": "agent/agent.py",
+      "start_line": 47,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:logs_col",
+      "label": "logs Collection",
+      "type": "entity",
+      "source_file": "agent/agent.py",
+      "start_line": 49,
+      "confidence": "high"
+    },
+    {
+      "id": "agent.py:reports_col",
+      "label": "reports Collection",
+      "type": "entity",
+      "source_file": "agent/agent.py",
+      "start_line": 50,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:FlowData",
+      "label": "FlowData Schema",
+      "type": "class",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 20,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:predict",
+      "label": "predict() Endpoint",
+      "type": "function",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 234,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:_normalize_timestamp",
+      "label": "_normalize_timestamp()",
+      "type": "function",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 186,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:_normalize_label",
+      "label": "_normalize_label()",
+      "type": "function",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 216,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:keras_model",
+      "label": "Keras Deep Learning Model",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 16,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:scaler",
+      "label": "Feature Scaler (joblib)",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 17,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:feature_selector",
+      "label": "Top 20 Feature List",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 18,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:MongoClient",
+      "label": "MongoDB Connection",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 13,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:traffic_logs_col",
+      "label": "traffic_logs Collection",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 15,
+      "confidence": "high"
+    },
+    {
+      "id": "detector.py:FastAPI",
+      "label": "FastAPI App",
+      "type": "entity",
+      "source_file": "ml_detector/detector.py",
+      "start_line": 12,
+      "confidence": "high"
+    },
+    {
+      "id": "external:Groq_API",
+      "label": "Groq LLM API",
+      "type": "external",
+      "source_file": "agent/agent.py",
+      "confidence": "medium"
+    },
+    {
+      "id": "external:sniffer",
+      "label": "Network Sniffer",
+      "type": "external",
+      "source_file": "agent/agent.py",
+      "confidence": "medium"
+    },
+    {
+      "id": "external:soc_dashboard",
+      "label": "SOC Dashboard",
+      "type": "external",
+      "source_file": "agent/agent.py",
+      "confidence": "medium"
+    },
+    {
+      "id": "external:CICFlowMeter",
+      "label": "CICFlowMeter/Flow Collector",
+      "type": "external",
+      "source_file": "ml_detector/detector.py",
+      "confidence": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent.py:socket_server",
+      "target": "agent.py:analyze_and_save",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:analyze_and_save",
+      "target": "agent.py:ChatOpenAI",
+      "relation_type": "uses",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:analyze_and_save",
+      "target": "agent.py:create_agent",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:analyze_and_save",
+      "target": "agent.py:_build_prompt",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:analyze_and_save",
+      "target": "agent.py:_save_report",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:_build_prompt",
+      "target": "agent.py:logs_col",
+      "relation_type": "queries",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:_save_report",
+      "target": "agent.py:reports_col",
+      "relation_type": "writes",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:_save_report",
+      "target": "agent.py:logs_col",
+      "relation_type": "updates",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:ThreatAnalysis",
+      "target": "agent.py:analyze_and_save",
+      "relation_type": "outputs",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:ChatOpenAI",
+      "target": "external:Groq_API",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:socket_server",
+      "target": "external:sniffer",
+      "relation_type": "receives_from",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:reports_col",
+      "target": "external:soc_dashboard",
+      "relation_type": "read_by",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:_normalize_timestamp",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:_normalize_label",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:scaler",
+      "relation_type": "uses",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:keras_model",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:feature_selector",
+      "relation_type": "uses",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:predict",
+      "target": "detector.py:traffic_logs_col",
+      "relation_type": "writes",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:FlowData",
+      "target": "detector.py:predict",
+      "relation_type": "input_to",
+      "confidence": "high"
+    },
+    {
+      "source": "external:CICFlowMeter",
+      "target": "detector.py:predict",
+      "relation_type": "calls",
+      "confidence": "high"
+    },
+    {
+      "source": "detector.py:traffic_logs_col",
+      "target": "external:soc_dashboard",
+      "relation_type": "read_by",
+      "confidence": "high"
+    },
+    {
+      "source": "agent.py:logs_col",
+      "target": "detector.py:traffic_logs_col",
+      "relation_type": "shares_db",
+      "confidence": "medium"
+    }
+  ],
+  "hyperedges": [
+    {
+      "nodes": [
+        "agent.py:_build_prompt",
+        "agent.py:analyze_and_save",
+        "agent.py:_save_report",
+        "agent.py:ThreatAnalysis"
+      ],
+      "label": "Threat Analysis Pipeline",
+      "type": "feature"
+    },
+    {
+      "nodes": [
+        "detector.py:FlowData",
+        "detector.py:predict",
+        "detector.py:_normalize_timestamp",
+        "detector.py:_normalize_label"
+      ],
+      "label": "IDS ML Prediction",
+      "type": "feature"
+    },
+    {
+      "nodes": [
+        "agent.py:ChatOpenAI",
+        "agent.py:create_agent",
+        "agent.py:analyze_and_save"
+      ],
+      "label": "LangChain Agent Orchestration",
+      "type": "framework"
+    },
+    {
+      "nodes": [
+        "detector.py:keras_model",
+        "detector.py:scaler",
+        "detector.py:feature_selector"
+      ],
+      "label": "ML Model Artifacts & Preprocessing",
+      "type": "assets"
+    },
+    {
+      "nodes": [
+        "agent.py:MongoClient",
+        "agent.py:logs_col",
+        "agent.py:reports_col",
+        "detector.py:traffic_logs_col"
+      ],
+      "label": "MongoDB Persistence Layer",
+      "type": "infrastructure"
+    }
+  ]
+}

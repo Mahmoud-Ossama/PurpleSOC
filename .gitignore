@@ -1,0 +1,94 @@
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# =========================
+# VS Code / JetBrains
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# MongoDB Data (DO NOT COMMIT)
+# =========================
+mongo_data/
+*.wt
+WiredTiger*
+mongod.lock
+storage.bson
+diagnostic.data/
+journal/
+
+# =========================
+# Mongo Shell
+# =========================
+.mongodb/
+
+# =========================
+# Graphify
+# =========================
+graphify-out/cache/
+graphify-out/*.json
+graphify-out/*.txt
+
+# Keep reports if desired
+!graphify-out/GRAPH_REPORT.md
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+.virtual_documents/
+
+# =========================
+# ML Models (optional)
+# Uncomment if models are generated artifacts
+# =========================
+# *.h5
+# *.pkl
+# *.onnx
+# *.pt
+# *.pth
+
+# =========================
+# Docker
+# =========================
+*.pid
+*.sock

@@ -1,0 +1,121 @@
+version: '3.8'
+
+services:
+
+  haproxy:
+    build: ./haproxy
+    container_name: haproxy24
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - web
+      - agent
+    networks:
+      - internal
+
+  web:
+    image: nginx:alpine
+    container_name: backend_web
+    restart: always
+    volumes:
+      - ./web:/var/www/html
+      - ./web/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - internal
+
+  php:
+    build: ./web
+    container_name: backend_php
+    restart: always
+    volumes:
+      - ./web:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - internal
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: dbpassword
+    volumes:
+      - ./web/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - internal
+
+  sniffer:
+    build: ./sniffer
+    container_name: sniffer
+    network_mode: "container:haproxy24"
+    depends_on:
+      - haproxy
+    restart: always
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+
+  ml_detector:
+    build: ./ml_detector
+    container_name: ml_detector
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./models:/models
+    depends_on:
+      - sniffer
+    restart: always
+    networks:
+      - internal
+
+  mongo:
+    image: mongo:7
+    container_name: mongo_db
+    restart: always
+    command: ["mongod", "--bind_ip", "0.0.0.0"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: adminpassword
+    volumes:
+      - ./mongo_data:/data/db
+    networks:
+      - internal
+    
+  agent:
+    build: ./agent
+    container_name: agent
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - internal
+
+
+  soc-dashboard:
+    build:
+      context: ./soc-dashboard
+      dockerfile: Dockerfile
+    container_name: soc-dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://admin:adminpassword@mongo:27017
+      - MONGODB_DB=ids_db
+      - NEXT_PUBLIC_APP_URL=http://192.168.1.13:3000
+      - NODE_ENV=production
+    depends_on:
+      - mongo
+    networks:
+      - internal
+
+networks:
+  internal:

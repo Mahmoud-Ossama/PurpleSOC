@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  soc-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: soc-dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://admin:adminpassword@mongo:27017
+      - MONGODB_DB=ids_db
+      - NEXT_PUBLIC_APP_URL=http://localhost:3000
+      - NODE_ENV=production
+    depends_on:
+      - mongo
+    networks:
+      - soc-net
+
+  mongo:
+    image: mongo:7
+    container_name: soc-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: adminpassword
+      MONGO_INITDB_DATABASE: ids_db
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - soc-net
+
+networks:
+  soc-net:
+volumes:
+  mongo-data:
