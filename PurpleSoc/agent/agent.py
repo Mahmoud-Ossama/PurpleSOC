@@ -37,7 +37,7 @@ PORT             = 514
 MAX_CONTEXT      = 100
 
 LLM_BASE_URL = "https://api.groq.com/openai/v1"
-client = Groq(api_key="gsk_...")
+client = Groq(api_key="your_api_key")
 LLM_MODEL    = "openai/gpt-oss-20b"
 
 # ============================================================
