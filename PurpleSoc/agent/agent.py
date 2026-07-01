@@ -6,6 +6,7 @@
 import re
 import time
 import json
+import os
 import socket
 import requests
 import ipaddress
@@ -37,7 +38,7 @@ PORT             = 514
 MAX_CONTEXT      = 100
 
 LLM_BASE_URL = "https://api.groq.com/openai/v1"
-client = Groq(api_key="your_api_key")
+LLM_API_KEY = os.getenv("GROQ_API_KEY")
 LLM_MODEL    = "openai/gpt-oss-20b"
 
 # ============================================================
