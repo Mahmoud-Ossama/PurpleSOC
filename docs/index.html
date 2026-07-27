@@ -50,37 +50,109 @@
     <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
       <h2>How It Works</h2>
-      <div class="workflow">
-        <div class="step animate-on-scroll">
-          <div class="step-number">1</div>
-          <h3>🔴 Red Team</h3>
-          <p>Our AI autonomously discovers and exploits vulnerabilities in your application, exactly as attackers would.</p>
-          <div class="step-features">
-            <span>Continuous scanning</span>
-            <span>Automated exploitation</span>
-            <span>0-day detection</span>
+      <div class="workflow-container">
+        <div class="workflow">
+          <!-- Step 1: Red Team -->
+          <div class="step animate-on-scroll">
+            <div class="step-header">
+              <div class="step-number">01</div>
+              <h3>Red Team</h3>
+            </div>
+            <p>Our AI autonomously discovers and exploits vulnerabilities in your application, exactly as attackers would.</p>
+            <div class="step-features">
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Continuous scanning
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Automated exploitation
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                0-day detection
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step animate-on-scroll">
-          <div class="step-number">2</div>
-          <h3>🔧 Fix</h3>
-          <p>Vulnerabilities are analyzed, prioritized, and fixed—automatically or with your team's oversight.</p>
-          <div class="step-features">
-            <span>Smart prioritization</span>
-            <span>Auto-patch generation</span>
-            <span>Remediation guidance</span>
+
+          <!-- Arrow 1 -->
+          <div class="step-connector animate-on-scroll">
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
           </div>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step animate-on-scroll">
-          <div class="step-number">3</div>
-          <h3>🔵 Blue Team</h3>
-          <p>Our AI blue team continuously monitors for the same attacks, alerting you instantly to any suspicious activity.</p>
-          <div class="step-features">
-            <span>24/7 monitoring</span>
-            <span>Real-time alerts</span>
-            <span>Threat correlation</span>
+
+          <!-- Step 2: Fix -->
+          <div class="step animate-on-scroll">
+            <div class="step-header">
+              <div class="step-number">02</div>
+              <h3>Fix</h3>
+            </div>
+            <p>Vulnerabilities are analyzed, prioritized, and fixed—automatically or with your team's oversight.</p>
+            <div class="step-features">
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Smart prioritization
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Auto-patch generation
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Remediation guidance
+              </span>
+            </div>
+          </div>
+
+          <!-- Arrow 2 -->
+          <div class="step-connector animate-on-scroll">
+            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+
+          <!-- Step 3: Blue Team -->
+          <div class="step animate-on-scroll">
+            <div class="step-header">
+              <div class="step-number">03</div>
+              <h3>Blue Team</h3>
+            </div>
+            <p>Our AI blue team continuously monitors for the same attacks, alerting you instantly to any suspicious activity.</p>
+            <div class="step-features">
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                24/7 monitoring
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Real-time alerts
+              </span>
+              <span>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Threat correlation
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -151,44 +223,127 @@
           <h3>Red + Recommendation</h3>
           <p>Autonomous penetration testing with detailed remediation guidance from our AI.</p>
           <ul class="plan-features-list">
-            <li>✓ Continuous red team testing</li>
-            <li>✓ Vulnerability reports</li>
-            <li>✓ Remediation recommendations</li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Continuous red team testing
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Vulnerability reports
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Remediation recommendations
+            </li>
           </ul>
           <a href="mailto:mahmoud@osama.engineer" class="cta">Contact us</a>
         </div>
+
         <div class="plan animate-on-scroll">
           <h3>Red + Blue</h3>
           <p>Full red team testing plus continuous threat monitoring and alerts.</p>
           <ul class="plan-features-list">
-            <li>✓ Red team testing</li>
-            <li>✓ Blue team monitoring</li>
-            <li>✓ Real-time alerts</li>
-            <li>✓ Threat detection</li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Red team testing
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Blue team monitoring
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Real-time alerts
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Threat detection
+            </li>
           </ul>
           <a href="mailto:mahmoud@osama.engineer" class="cta">Contact us</a>
         </div>
+
         <div class="plan animate-on-scroll">
           <h3>Blue Only</h3>
           <p>Continuous monitoring and threat detection without the red team engagement.</p>
           <ul class="plan-features-list">
-            <li>✓ 24/7 monitoring</li>
-            <li>✓ Threat detection</li>
-            <li>✓ Real-time alerts</li>
-            <li>✓ Security dashboard</li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              24/7 monitoring
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Threat detection
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Real-time alerts
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Security dashboard
+            </li>
           </ul>
           <a href="mailto:mahmoud@osama.engineer" class="cta">Contact us</a>
         </div>
+
         <div class="plan plan-featured animate-on-scroll">
-          <div class="plan-badge">🏆 Most Complete</div>
+          <div class="plan-badge">Most Complete</div>
           <h3>Red + Auto-Fix + Blue</h3>
           <p>Everything: red team testing, AI-generated patches, deployment, and continuous blue team monitoring.</p>
           <ul class="plan-features-list">
-            <li>✓ Autonomous red team</li>
-            <li>✓ Automated patch generation</li>
-            <li>✓ Patch deployment</li>
-            <li>✓ Continuous blue team</li>
-            <li>✓ Priority support</li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Autonomous red team
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Automated patch generation
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Patch deployment
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Continuous blue team
+            </li>
+            <li>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Priority support
+            </li>
           </ul>
           <a href="mailto:mahmoud@osama.engineer" class="cta cta-featured">Get Started</a>
         </div>
@@ -202,22 +357,73 @@
         <div class="comparison-item animate-on-scroll">
           <h3>Manual Testing</h3>
           <div class="comparison-bad">
-            <p>❌ Once per year</p>
-            <p>❌ Expensive teams</p>
-            <p>❌ Blind between tests</p>
-            <p>❌ Time to patch: weeks</p>
+            <p>
+              <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              Once per year
+            </p>
+            <p>
+              <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              Expensive teams
+            </p>
+            <p>
+              <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              Blind between tests
+            </p>
+            <p>
+              <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              Time to patch: weeks
+            </p>
           </div>
         </div>
+
         <div class="comparison-center">
-          <div class="vs-badge">vs</div>
+          <div class="vs-badge">
+            <svg class="icon-vs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="10" font-weight="bold" fill="currentColor">VS</text>
+            </svg>
+            VS
+          </div>
         </div>
+
         <div class="comparison-item animate-on-scroll">
           <h3>PurpleSOC AI</h3>
           <div class="comparison-good">
-            <p>✓ Continuous monitoring</p>
-            <p>✓ Always active</p>
-            <p>✓ Never blind</p>
-            <p>✓ Time to patch: hours</p>
+            <p>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Continuous monitoring
+            </p>
+            <p>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Always active
+            </p>
+            <p>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Never blind
+            </p>
+            <p>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Time to patch: hours
+            </p>
           </div>
         </div>
       </div>
@@ -228,7 +434,7 @@
       <h2>Ready to Secure Your App?</h2>
       <p class="contact-subtitle">Talk to our founder and get started in minutes</p>
       <div class="contact-card">
-        <p class="contact-name"><strong>Mahmoud Osama</strong><br><span>Founder & CEO, PurpleSOC</span></p>
+        <p class="contact-name">Mahmoud Osama<span>Founder & CEO, PurpleSOC</span></p>
         <div class="contact-links">
           <a href="mailto:mahmoud@osama.engineer" class="contact-link">
             <span class="contact-icon">📧</span>
@@ -244,7 +450,6 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>PurpleSOC • Presented at IUGRC 2026</p>
       <p class="footer-subtext">Autonomous security that learns, adapts, and protects. 🛡️</p>
     </footer>
   </div>
@@ -252,4 +457,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
