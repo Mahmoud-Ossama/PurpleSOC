@@ -1,18 +1,18 @@
 /* PurpleSOC Landing Page – Premium Blue & Monochrome */
 
 :root {
-  /* Premium dark theme: deep navy with high-contrast white text */
+  /* Premium dark theme: deep charcoal with high-contrast white text */
   --bg-primary: #0a0d14;
   --bg-secondary: #131824;
   --bg-tertiary: #1a2236;
   --text-primary: #ffffff;
   --text-secondary: #c0c5d0;
   --text-muted: #7a8190;
-  /* Accent: Sleek blue for premium feel */
-  --accent: #4a9eff;
-  --accent-light: #6eb3ff;
-  --accent-dark: #3a8ee0;
-  --accent-glow: rgba(74, 158, 255, 0.25);
+  /* Accent: Warm amber/gold for security vigilance */
+  --accent: #d4a574;
+  --accent-light: #e5b88a;
+  --accent-dark: #c69560;
+  --accent-glow: rgba(212, 165, 116, 0.25);
   --border: #232d3a;
   --success: #5ab878;
   --warning: #e8745f;
@@ -241,7 +241,7 @@ p strong {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(74, 158, 255, 0.1);
+  background: rgba(212, 165, 116, 0.1);
   color: var(--accent-light);
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
@@ -392,7 +392,7 @@ p strong {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(74, 158, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.1), transparent);
   transition: left 0.5s ease;
   z-index: 0;
 }
@@ -458,12 +458,12 @@ p strong {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: rgba(74, 158, 255, 0.08);
+  background: rgba(212, 165, 116, 0.08);
   color: var(--text-secondary);
   padding: 0.75rem 1rem;
   border-radius: 6px;
   font-size: 0.9rem;
-  border: 1px solid rgba(74, 158, 255, 0.15);
+  border: 1px solid rgba(212, 165, 116, 0.15);
   transition: all 0.3s ease;
 }
 
@@ -668,14 +668,14 @@ p strong {
   padding: 0.75rem;
   color: var(--text-secondary);
   font-size: 0.95rem;
-  background: rgba(74, 158, 255, 0.05);
+  background: rgba(212, 165, 116, 0.05);
   border-radius: 6px;
   border: 1px solid rgba(74, 158, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .plan-features-list li:hover {
-  background: rgba(74, 158, 255, 0.1);
+  background: rgba(212, 165, 116, 0.1);
   border-color: var(--accent);
 }
 
@@ -840,7 +840,7 @@ p strong {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-light);
-  background: rgba(74, 158, 255, 0.1);
+  background: rgba(212, 165, 116, 0.1);
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
@@ -869,7 +869,7 @@ p strong {
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
   align-self: flex-start;
 }
 
@@ -896,7 +896,7 @@ p strong {
 }
 
 .cta-secondary:hover {
-  background: rgba(74, 158, 255, 0.1);
+  background: rgba(212, 165, 116, 0.1);
 }
 
 .cta-featured {
